@@ -1,0 +1,70 @@
+# Flask核心组件
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.5
+Flask-Migrate==4.0.4
+Flask-CORS==4.0.0
+Flask-JWT-Extended==4.5.2
+
+# 数据库相关
+SQLAlchemy==2.0.15
+psycopg2-binary==2.9.6
+redis==4.5.5
+
+# 数据处理和分析
+pandas==2.0.2
+numpy==1.24.3
+scikit-learn==1.2.2
+TA-Lib==0.4.26
+
+# 异步任务
+celery==5.3.0
+kombu==5.3.0
+
+# 任务调度
+APScheduler==3.10.1
+
+# HTTP请求
+requests==2.31.0
+urllib3==2.0.3
+
+# API文档
+flask-restx==1.1.0
+Werkzeug==2.3.6
+
+# 环境变量管理
+python-dotenv==1.0.0
+
+# 密码加密
+bcrypt==4.0.1
+passlib==1.7.4
+
+# JSON处理
+marshmallow==3.19.0
+flask-marshmallow==0.15.0
+
+# 邮件发送
+Flask-Mail==0.9.1
+
+# 日志记录
+loguru==0.7.0
+
+# 开发工具
+pytest==7.3.1
+pytest-flask==1.2.0
+black==23.3.0
+flake8==6.0.0
+
+# 生产环境
+gunicorn==20.1.0
+supervisor==4.2.5
+
+# AI集成
+openai==0.27.8
+
+# 金融数据
+yfinance==0.2.18
+tushare==1.2.89
+
+# 时间处理
+pytz==2023.3
+python-dateutil==2.8.2 
