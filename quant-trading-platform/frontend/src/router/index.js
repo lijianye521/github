@@ -26,47 +26,32 @@ const router = createRouter({
       component: () => import('@/views/Dashboard.vue'),
       meta: { requiresAuth: false }
     },
+    // 策略管理路由 - 使用平级路由结构
     {
       path: '/strategy',
       name: 'strategy',
       component: () => import('@/views/Strategy/StrategyList.vue'),
-      meta: { requiresAuth: false },
-      children: [
-        {
-          path: 'create',
-          name: 'strategyCreate',
-          component: () => import('@/views/Strategy/StrategyCreate.vue')
-        },
-        {
-          path: 'edit/:id',
-          name: 'strategyEdit',
-          component: () => import('@/views/Strategy/StrategyEdit.vue')
-        },
-        {
-          path: 'detail/:id',
-          name: 'strategyDetail',
-          component: () => import('@/views/Strategy/StrategyDetail.vue')
-        }
-      ]
+      meta: { requiresAuth: false }
     },
     {
       path: '/strategy/create',
-      name: 'strategyCreatePage',
+      name: 'strategyCreate',
       component: () => import('@/views/Strategy/StrategyCreate.vue'),
       meta: { requiresAuth: false }
     },
     {
       path: '/strategy/edit/:id',
-      name: 'strategyEditPage',
+      name: 'strategyEdit',
       component: () => import('@/views/Strategy/StrategyEdit.vue'),
       meta: { requiresAuth: false }
     },
     {
       path: '/strategy/detail/:id',
-      name: 'strategyDetailPage',
+      name: 'strategyDetail',
       component: () => import('@/views/Strategy/StrategyDetail.vue'),
       meta: { requiresAuth: false }
     },
+    // 回测分析路由
     {
       path: '/backtest',
       name: 'backtest',
@@ -85,6 +70,7 @@ const router = createRouter({
       component: () => import('@/views/Backtest/BacktestResult.vue'),
       meta: { requiresAuth: false }
     },
+    // 数据中心路由
     {
       path: '/data/stocks',
       name: 'stockData',
@@ -97,18 +83,21 @@ const router = createRouter({
       component: () => import('@/views/Data/Charts.vue'),
       meta: { requiresAuth: false }
     },
+    // AI助手路由
     {
       path: '/ai-assistant',
       name: 'aiAssistant',
       component: () => import('@/views/AIAssistant.vue'),
       meta: { requiresAuth: false }
     },
+    // 用户相关路由
     {
       path: '/profile',
       name: 'profile',
       component: () => import('@/views/Profile.vue'),
       meta: { requiresAuth: false }
     },
+    // 404路由
     {
       path: '/:pathMatch(.*)*',
       name: 'notFound',
