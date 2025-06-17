@@ -829,4 +829,15 @@ onMounted(() => {
   line-height: 18px;
   font-size: 10px;
 }
+
+:deep(.el-table .el-button--text) {
+  padding: 2px 4px;
+  font-size: 11px;
+  min-height: auto;
+  margin: 0;
+}
+
+:deep(.el-table .table-actions .el-button) {
+  margin: 0 2px;
+}
 </style> 
