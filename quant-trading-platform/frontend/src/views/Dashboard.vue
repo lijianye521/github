@@ -775,6 +775,15 @@ onMounted(() => {
     height: 28px;
     font-size: 10px;
   }
+  
+  .table-actions {
+    gap: 2px;
+  }
+  
+  .table-actions .el-button {
+    padding: 1px 3px;
+    font-size: 10px;
+  }
 }
 
 /* === Element Plus 组件样式重写 === */
