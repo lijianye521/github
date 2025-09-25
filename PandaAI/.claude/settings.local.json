@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(poetry --version)",
+      "Bash(pip install:*)",
+      "Bash(C:UserslijianyeAppDataRoamingPythonPython38Scriptspoetry.exe install)",
+      "Bash(python:*)",
+      "Bash(git checkout:*)",
+      "mcp__playwright__playwright_navigate",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
